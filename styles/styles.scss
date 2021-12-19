@@ -1,0 +1,126 @@
+@import "scss";
+@font-face {
+  font-family: Kobin;
+  src: url("../public/font/PeydaFont/peyda-light.ttf") format("truetype"),
+  url("../public/font/PeydaFont/Peyda-Medium.ttf") format("truetype"),
+  url("../public/font/PeydaFont/Peyda-Black.ttf") format("truetype"),
+  url("../public/font/PeydaFont/Peyda-Bold.ttf") format("truetype"),
+  url("../public/font/PeydaFont/Peyda-ExtraBold.ttf") format("truetype"),
+  url("../public/font/PeydaFont/peyda-extralight.ttf") format("truetype"),
+  url("../public/font/PeydaFont/Peyda-Regular.ttf") format("truetype"),
+  url("../public/font/PeydaFont/Peyda-SemiBold.ttf") format("truetype"),
+  url("../public/font/PeydaFont/Peyda-Thin.ttf") format("truetype");
+}
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+}
+* {
+  direction: rtl;
+  box-sizing: border-box;
+  font-family: Kobin;
+}
+a {
+  text-decoration: none;
+}
+button {
+  outline: none;
+  cursor: pointer;
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+#__next {
+  width: 100%;
+  height: 100%;
+}
+// ---------------------- class ------------------------------------ class ----------------------------
+// ----------- flex -----------
+.betweenCenterColumn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.betweenCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.startCenter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.endCenter{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+// ----------- width and height -----------
+.wh100 {
+  width: 100%;
+  height: 100%;
+}
+.wBase {
+  width: 100%;
+  max-width: 1180px;
+}
+.w100 {
+  width: 100%;
+}
+.w50 {
+  width: 50%;
+}
+// ----------- color -----------
+.bgPrimary{
+  background-color: $primary;
+}
+// ----------- color -----------
+.textWhite {
+  color: $whiteLight;
+}
+// ----------- font -----------
+.font20 {
+  font-size: $fontII;
+}
+.font24{
+  font-size: $fontIII;
+}
+// ----------- weight -----------
+.weight400 {
+  font-weight: 400;
+}
+.weight600 {
+  font-weight: 600;
+
+}
+// ----------- padding -----------
+.pbt40 {
+  padding: 40px 0;
+}
+.p15{
+  padding: 15px;
+}
+// ----------- margin -----------
+.mr25 {
+  margin-right: 25px;
+}
+.ml20{
+  margin-left: 20px;
+}
+// ----------- radius -----------
+.radius20{
+  border-radius: 20px;
+}
+// ----------- border -----------
+.borderNone{
+  border: none;
+}
+@media screen and (max-width: 1221px) {
+  .wBase {
+    padding: 0 20px;
+  }
+}
