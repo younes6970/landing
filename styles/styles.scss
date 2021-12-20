@@ -2,20 +2,21 @@
 @font-face {
   font-family: Kobin;
   src: url("../public/font/PeydaFont/peyda-light.ttf") format("truetype"),
-  url("../public/font/PeydaFont/Peyda-Medium.ttf") format("truetype"),
-  url("../public/font/PeydaFont/Peyda-Black.ttf") format("truetype"),
-  url("../public/font/PeydaFont/Peyda-Bold.ttf") format("truetype"),
-  url("../public/font/PeydaFont/Peyda-ExtraBold.ttf") format("truetype"),
-  url("../public/font/PeydaFont/peyda-extralight.ttf") format("truetype"),
-  url("../public/font/PeydaFont/Peyda-Regular.ttf") format("truetype"),
-  url("../public/font/PeydaFont/Peyda-SemiBold.ttf") format("truetype"),
-  url("../public/font/PeydaFont/Peyda-Thin.ttf") format("truetype");
+    url("../public/font/PeydaFont/Peyda-Medium.ttf") format("truetype"),
+    url("../public/font/PeydaFont/Peyda-Black.ttf") format("truetype"),
+    url("../public/font/PeydaFont/Peyda-Bold.ttf") format("truetype"),
+    url("../public/font/PeydaFont/Peyda-ExtraBold.ttf") format("truetype"),
+    url("../public/font/PeydaFont/peyda-extralight.ttf") format("truetype"),
+    url("../public/font/PeydaFont/Peyda-Regular.ttf") format("truetype"),
+    url("../public/font/PeydaFont/Peyda-SemiBold.ttf") format("truetype"),
+    url("../public/font/PeydaFont/Peyda-Thin.ttf") format("truetype");
 }
 html {
   font-size: 16px;
 }
 body {
   margin: 0;
+  background-color: $base;
 }
 * {
   direction: rtl;
@@ -49,15 +50,38 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+.startCenterColumn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.startColumn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .startCenter {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.endCenter{
+.endCenter {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+.flex1 {
+  flex: 1;
+}
+.flex2 {
+  flex: 2;
 }
 // ----------- width and height -----------
 .wh100 {
@@ -74,20 +98,55 @@ button {
 .w50 {
   width: 50%;
 }
-// ----------- color -----------
-.bgPrimary{
+.w90{
+  width: 90%;
+}
+.h100 {
+  height: 100%;
+}
+.h63{
+  height: 63px;
+}
+// ----------- bg -----------
+.bgPrimary {
   background-color: $primary;
+}
+.bgWhite {
+  background-color: $whiteLight;
 }
 // ----------- color -----------
 .textWhite {
   color: $whiteLight;
 }
+.textOrange {
+  color: $orange;
+}
+.textBlackLight {
+  color: $black1;
+}
+// ----------- text-align -----------
+.textRight {
+  text-align: right;
+}
+.textJustify {
+  text-align: justify;
+}
+// ----------- line-height -----------
+.lineH61{
+  line-height: 61px;
+}
 // ----------- font -----------
 .font20 {
   font-size: $fontII;
 }
-.font24{
+.font24 {
   font-size: $fontIII;
+}
+.font30 {
+  font-size: $fontIV;
+}
+.font64 {
+  font-size: $fontVI;
 }
 // ----------- weight -----------
 .weight400 {
@@ -95,29 +154,149 @@ button {
 }
 .weight600 {
   font-weight: 600;
-
+}
+.weight700 {
+  font-weight: 700;
+}
+// ----------- index -----------
+.index100{
+  z-index: 100;
+}
+.index1000{
+  z-index: 1000;
 }
 // ----------- padding -----------
+.p60 {
+  padding: 60px;
+}
 .pbt40 {
   padding: 40px 0;
 }
-.p15{
+.p15 {
   padding: 15px;
+}
+.prl20{
+  padding-right: 20px;
+  padding-left: 20px;
 }
 // ----------- margin -----------
 .mr25 {
   margin-right: 25px;
 }
-.ml20{
+.mr50{
+  margin-right: 50px;
+}
+.ml20 {
   margin-left: 20px;
 }
+.mbt20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.mt100{
+  margin-top: 100px;
+}
+.mText {
+  margin: 0 1px;
+}
+.mNone {
+  margin: 0;
+}
+.mMain{
+  margin-top: 155px;
+}
+// ----------- overflow -----------
+.hidden{
+  overflow: hidden;
+}
+.hiddenX{
+  overflow-x: hidden;
+}
 // ----------- radius -----------
-.radius20{
+.radius20 {
   border-radius: 20px;
 }
+.radius42 {
+  border-radius: 42px;
+}
+
 // ----------- border -----------
-.borderNone{
+.borderNone {
   border: none;
+}
+// ----------- shadow -----------
+.shadow {
+  box-shadow: 0 31px 64px -14px rgba(0, 0, 0, 0.11);
+}
+.shadowBtn {
+  box-shadow: 0 4px 24px -10px $primary;
+}
+// ----------- position -----------
+.relative {
+  position: relative;
+}
+// ----------- class -----------
+.boxSection {
+  @extend .wh100;
+  @extend .startCenterColumn;
+  @extend .p60;
+  @extend .radius42;
+  @extend .shadow;
+}
+.textHeadingBig {
+  @extend .font64;
+  @extend .textOrange;
+  @extend .weight700;
+}
+.textParagraphHome {
+  @extend .font30;
+  @extend .textBlackLight;
+  @extend .lineH61;
+}
+.underLine {
+  position: absolute;
+  bottom: -35px;
+  right: 0;
+}
+.btn{
+  border: none;
+  outline: none;
+  background-color: $primary;
+  color: $whiteLight;
+  font-size: $fontII;
+  @extend .weight600;
+}
+.inputNumber{
+  background-color: $black3;
+  border: none;
+  outline: none;
+  color: $whiteLight;
+  font-size: $fontII;
+  @extend .weight600;
+  text-align: right;
+  width: 275px;
+}
+.vectorVideoIcon {
+  position: absolute;
+  top: 60px;
+  left: -130px;
+  width: 609px;
+  height: 561px;
+}
+.videoIcon {
+  position: absolute;
+  top: -40px;
+  left: -130px;
+}
+.vectorSound{
+  position: absolute;
+  bottom: -60px;
+  right: -155px;
+}
+.marketingIcon{
+  position: absolute;
+  bottom: -85px;
+  right: -125px;
 }
 @media screen and (max-width: 1221px) {
   .wBase {
