@@ -8,10 +8,10 @@ import marketingIcon from "../../../../assets/icon/MobileMarketingRafiki.svg";
 import SendLink from "../SendLink/SendLink";
 const Description = () => {
   return (
-    <section className={`boxSection bgWhite relative`}>
+    <section className={`boxSection bgWhite relative mb100`}>
       <div className={`w100 betweenCenter`}>
         <div className={`flex2 startColumn`}>
-          <h2 className={`textHeadingBig mNone`}>
+          <h2 className={`textHeadingBig textOrange mNone`}>
             ویدیو ببین،{" "}
             <span className={`textHeadingBig relative`}>
               <div className={`underLine`}>

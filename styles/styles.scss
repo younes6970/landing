@@ -98,13 +98,13 @@ button {
 .w50 {
   width: 50%;
 }
-.w90{
+.w90 {
   width: 90%;
 }
 .h100 {
   height: 100%;
 }
-.h63{
+.h63 {
   height: 63px;
 }
 // ----------- bg -----------
@@ -121,8 +121,17 @@ button {
 .textOrange {
   color: $orange;
 }
+.textPrimary {
+  color: $primary;
+}
 .textBlackLight {
   color: $black1;
+}
+.textBlack {
+  color: $black10;
+}
+.textBlackDark{
+  color: $black7
 }
 // ----------- text-align -----------
 .textRight {
@@ -131,8 +140,11 @@ button {
 .textJustify {
   text-align: justify;
 }
+.textCenter {
+  text-align: center;
+}
 // ----------- line-height -----------
-.lineH61{
+.lineH61 {
   line-height: 61px;
 }
 // ----------- font -----------
@@ -159,10 +171,10 @@ button {
   font-weight: 700;
 }
 // ----------- index -----------
-.index100{
+.index100 {
   z-index: 100;
 }
-.index1000{
+.index1000 {
   z-index: 1000;
 }
 // ----------- padding -----------
@@ -175,7 +187,7 @@ button {
 .p15 {
   padding: 15px;
 }
-.prl20{
+.prl20 {
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -183,7 +195,7 @@ button {
 .mr25 {
   margin-right: 25px;
 }
-.mr50{
+.mr50 {
   margin-right: 50px;
 }
 .ml20 {
@@ -193,8 +205,20 @@ button {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.mt100{
+.mt10{
+  margin-top: 10px;
+}
+.mt5{
+  margin-top: 5px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt100 {
   margin-top: 100px;
+}
+.mb100 {
+  margin-bottom: 100px;
 }
 .mText {
   margin: 0 1px;
@@ -202,14 +226,20 @@ button {
 .mNone {
   margin: 0;
 }
-.mMain{
+.mt0{
+  margin-top: 0;
+}
+.mb0{
+  margin-bottom: 0;
+}
+.mMain {
   margin-top: 155px;
 }
 // ----------- overflow -----------
-.hidden{
+.hidden {
   overflow: hidden;
 }
-.hiddenX{
+.hiddenX {
   overflow-x: hidden;
 }
 // ----------- radius -----------
@@ -245,7 +275,6 @@ button {
 }
 .textHeadingBig {
   @extend .font64;
-  @extend .textOrange;
   @extend .weight700;
 }
 .textParagraphHome {
@@ -258,7 +287,12 @@ button {
   bottom: -35px;
   right: 0;
 }
-.btn{
+.underLineToman {
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+}
+.btn {
   border: none;
   outline: none;
   background-color: $primary;
@@ -266,7 +300,7 @@ button {
   font-size: $fontII;
   @extend .weight600;
 }
-.inputNumber{
+.inputNumber {
   background-color: $black3;
   border: none;
   outline: none;
@@ -288,16 +322,23 @@ button {
   top: -40px;
   left: -130px;
 }
-.vectorSound{
+.vectorSound {
   position: absolute;
   bottom: -60px;
   right: -155px;
 }
-.marketingIcon{
+.marketingIcon {
   position: absolute;
   bottom: -85px;
   right: -125px;
 }
+.networkIcon {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media screen and (max-width: 1221px) {
   .wBase {
     padding: 0 20px;
