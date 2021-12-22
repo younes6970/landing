@@ -21,7 +21,7 @@ const Description = () => {
             </span>{" "}
             بگیر
           </h2>
-          <p className={`textParagraphHome textJustify mbt20 w90`}>
+          <p className={`textParagraphHome textBlackDark textJustify mbt20 w90`}>
             اپلیکیشن کوبین رو از لینک زیر دانلود کنید و یدیوهای تبلیغاتی
             اطرافتون رو تماشا کنید، کوبین به ازای هر ویدیویی که می بینید به شما
             سکه میده و با سکه هاتون از بانک جوایز کویین رایگان خرید کنید!
@@ -58,12 +58,12 @@ const Description = () => {
               </div>
             </span>
           </h2>
-          <p className={`textParagraphHome textJustify mbt20 w90`}>
+          <p className={`textParagraphHome textBlackDark textJustify mbt20 w90`}>
             اگر صاحب کسب و کاری هستید، تبلیغات خود را به کوبین بسپارید تا با
             استفاده از بروزترین روش ها و به شکل هوشمند تبلیغات شما را به کاربران
             نمایش دهیم.
           </p>
-          <button className={`btn shadowBtn radius20 p15`}>
+          <button className={`btn textWhite bgPrimary shadowBtn radius20 p15`}>
             ثبت نام کسب و کار در پلترم
           </button>
         </div>

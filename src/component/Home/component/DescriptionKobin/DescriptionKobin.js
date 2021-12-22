@@ -1,5 +1,7 @@
 import underLineNovinIcon from "../../../../assets/icon/underLineNovin.svg";
 import tomanIcon from "../../../../assets/icon/underLineToman.svg";
+import homePageIcon from "../../../../assets/icon/HomePage.svg"
+import coinIcon from "../../../../assets/icon/coin.svg"
 import Image from "next/image";
 const DescriptionKobin = () => {
   return (
@@ -20,17 +22,17 @@ const DescriptionKobin = () => {
             <br />
             دیده شدن کسب و کار شما
           </h2>
-          <p className={`textParagraphHome textRight mt20 mb0 weight400`}>
+          <p className={`textParagraphHome textBlackDark textRight m0 weight400`}>
             کوبیناولین پلتفرمحوره دیجیتال مارکتینگ است که ابزار و امکانات
             تبلیغاتی در اختیار صاحبان کسب وکارقرارمیدهد که پیش ازاین در دسترس
             نبوده است.اطلاعات بیشتر...
           </p>
-          <span className={`textParagraphHome mt10 weight400`}>
+          <span className={`textParagraphHome textBlackDark m0 weight400`}>
             هزینه انتشار آگهی:
           </span>
-          <span className={`weight400 font30 textBlackDark mt5`}>
+          <span className={`weight400 font30 textBlackDark m0`}>
             از{" "}
-            <span className={`weight400 font30 textBlackDark mt5 relative`}>
+            <span className={`weight400 font30 textBlackDark relative`}>
               180
               <span className={`underLineToman`}>
                 <Image src={tomanIcon} alt={"kobin"} />
@@ -39,7 +41,14 @@ const DescriptionKobin = () => {
             تومان به ازای هر نمایش
           </span>
         </div>
-        <div className={`flex1`}></div>
+        <div className={`flex1`}>
+          <div className={`homePage`}>
+            <Image src={homePageIcon} alt={"kobin"} />
+          </div>
+        </div>
+      </div>
+      <div className={`coinIcon`}>
+        <Image src={coinIcon} alt={"kobin"} />
       </div>
     </section>
   );

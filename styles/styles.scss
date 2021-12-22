@@ -67,6 +67,12 @@ button {
   justify-content: center;
   align-items: center;
 }
+.centerColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .startCenter {
   display: flex;
   justify-content: flex-start;
@@ -114,6 +120,9 @@ button {
 .bgWhite {
   background-color: $whiteLight;
 }
+.bgBlack{
+  background-color: $black10;
+}
 // ----------- color -----------
 .textWhite {
   color: $whiteLight;
@@ -130,8 +139,8 @@ button {
 .textBlack {
   color: $black10;
 }
-.textBlackDark{
-  color: $black7
+.textBlackDark {
+  color: $black7;
 }
 // ----------- text-align -----------
 .textRight {
@@ -181,6 +190,9 @@ button {
 .p60 {
   padding: 60px;
 }
+.p45 {
+  padding: 45px;
+}
 .pbt40 {
   padding: 40px 0;
 }
@@ -205,14 +217,17 @@ button {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.mt10{
+.mt10 {
   margin-top: 10px;
 }
-.mt5{
+.mt5 {
   margin-top: 5px;
 }
 .mt20 {
   margin-top: 20px;
+}
+.m45{
+  margin: 45px;
 }
 .mt100 {
   margin-top: 100px;
@@ -226,11 +241,14 @@ button {
 .mNone {
   margin: 0;
 }
-.mt0{
+.mt0 {
   margin-top: 0;
 }
-.mb0{
+.mb0 {
   margin-bottom: 0;
+}
+.m0 {
+  margin: 0;
 }
 .mMain {
   margin-top: 155px;
@@ -269,7 +287,7 @@ button {
 .boxSection {
   @extend .wh100;
   @extend .startCenterColumn;
-  @extend .p60;
+  @extend .p45;
   @extend .radius42;
   @extend .shadow;
 }
@@ -279,7 +297,6 @@ button {
 }
 .textParagraphHome {
   @extend .font30;
-  @extend .textBlackLight;
   @extend .lineH61;
 }
 .underLine {
@@ -295,8 +312,6 @@ button {
 .btn {
   border: none;
   outline: none;
-  background-color: $primary;
-  color: $whiteLight;
   font-size: $fontII;
   @extend .weight600;
 }
@@ -338,7 +353,30 @@ button {
   left: 50%;
   transform: translateX(-50%);
 }
-
+.homePage{
+  position: absolute;
+  top: -5px;
+  left: 0;
+}
+.coinIcon{
+  position: absolute;
+  top: -110px;
+  right: -10%;
+  left: -10%;
+}
+.sellIcon{
+  position: absolute;
+  bottom: -125px;
+  left: -155px;
+  transform: scale(0.8);
+}
+.backgroundVideo{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
 @media screen and (max-width: 1221px) {
   .wBase {
     padding: 0 20px;

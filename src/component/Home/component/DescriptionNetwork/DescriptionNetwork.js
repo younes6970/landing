@@ -3,7 +3,7 @@ import Image from "next/image";
 const DescriptionNetwork = () => {
   return (
     <section className={`boxSection bgWhite relative mt100`}>
-      <div className={""}>
+      <div className={`networkIcon`}>
         <Image src={kobin3dIcon} alt={"kobin"} />
       </div>
       <div className={`w100 startCenterColumn mt100`}>

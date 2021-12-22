@@ -6,7 +6,7 @@ const SendLink = () => {
         type={"text"}
         placeholder={"شماره موبایل"}
       />
-      <button className={`btn h100 prl20 shadowBtn`}>ارسال لینک دانلود</button>
+      <button className={`btn bgPrimary textWhite h100 prl20 shadowBtn`}>ارسال لینک دانلود</button>
     </div>
   );
 };
