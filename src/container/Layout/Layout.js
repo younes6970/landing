@@ -1,5 +1,6 @@
 import styles from "./styles/layout.module.scss";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 const Layout = (props) => {
   const { children } = props;
   return (
@@ -8,7 +9,7 @@ const Layout = (props) => {
       <main className={`wh100 center index100 mMain`}>
         <div className={`wBase h100 center`}>{children}</div>
       </main>
-      <footer>footer</footer>
+      <Footer />
     </div>
   );
 };

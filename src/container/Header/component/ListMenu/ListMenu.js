@@ -1,11 +1,13 @@
 import PropTypes from "prop-types";
 import Link from "next/link";
 const ListMenu = (props) => {
-  const { title, id, link } = props;
+  const { title, id, link, footer } = props;
   return (
-    <li key={id} className={`mr25`}>
+    <li key={id} className={`mr25 ${footer && "mb20"}`}>
       <Link href={link}>
-        <a className={`textWhite font20 weight400`}>{title}</a>
+        <a className={`textWhite weight400 ${footer ? "font24" : "font20"}`}>
+          {title}
+        </a>
       </Link>
     </li>
   );
@@ -15,4 +17,5 @@ ListMenu.propTypes = {
   title: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
+  footer: PropTypes.bool,
 };
