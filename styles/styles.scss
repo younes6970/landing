@@ -90,6 +90,12 @@ button {
   flex: 2;
 }
 // ----------- width and height -----------
+.wTextMarketing {
+  width: 275px;
+}
+.wTextMarketingCEnter {
+  width: 450px;
+}
 .wh100 {
   width: 100%;
   height: 100%;
@@ -120,7 +126,7 @@ button {
 .bgWhite {
   background-color: $whiteLight;
 }
-.bgBlack{
+.bgBlack {
   background-color: $black10;
 }
 // ----------- color -----------
@@ -132,6 +138,9 @@ button {
 }
 .textPrimary {
   color: $primary;
+}
+.textGreen {
+  color: $green;
 }
 .textBlackLight {
   color: $black1;
@@ -157,6 +166,9 @@ button {
   line-height: 61px;
 }
 // ----------- font -----------
+.font16 {
+  font-size: $fontI;
+}
 .font20 {
   font-size: $fontII;
 }
@@ -165,6 +177,9 @@ button {
 }
 .font30 {
   font-size: $fontIV;
+}
+.font40 {
+  font-size: $fontV;
 }
 .font64 {
   font-size: $fontVI;
@@ -178,6 +193,9 @@ button {
 }
 .weight700 {
   font-weight: 700;
+}
+.weight800 {
+  font-weight: 800;
 }
 // ----------- index -----------
 .index100 {
@@ -217,6 +235,10 @@ button {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.mbt10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .mt10 {
   margin-top: 10px;
 }
@@ -226,7 +248,7 @@ button {
 .mt20 {
   margin-top: 20px;
 }
-.m45{
+.m45 {
   margin: 45px;
 }
 .mt100 {
@@ -282,6 +304,12 @@ button {
 // ----------- position -----------
 .relative {
   position: relative;
+}
+.absoluteCenter {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
 }
 // ----------- class -----------
 .boxSection {
@@ -353,29 +381,53 @@ button {
   left: 50%;
   transform: translateX(-50%);
 }
-.homePage{
+.homePage {
   position: absolute;
   top: -5px;
   left: 0;
 }
-.coinIcon{
+.coinIcon {
   position: absolute;
   top: -110px;
   right: -10%;
   left: -10%;
 }
-.sellIcon{
+.sellIcon {
   position: absolute;
   bottom: -125px;
   left: -155px;
   transform: scale(0.8);
 }
-.backgroundVideo{
+.backgroundVideo {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
+}
+.textOne {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.textTwo {
+  position: absolute;
+  top: -1%;
+  right: 50%;
+  transform: translateX(50%);
+}
+.textThree {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.textFour {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
 }
 @media screen and (max-width: 1221px) {
   .wBase {

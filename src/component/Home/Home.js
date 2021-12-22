@@ -3,6 +3,7 @@ import DescriptionNetwork from "./component/DescriptionNetwork/DescriptionNetwor
 import DescriptionKobin from "./component/DescriptionKobin/DescriptionKobin";
 import DescriptionSell from "./component/DescriptionSell/DescriptionSell";
 import DescriptionVideo from "./component/DescriptionVideo/DescriptionVideo";
+import DescriptionMarketing from "./component/DescriptionMarketing/DescriptionMarketing";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <DescriptionKobin />
       <DescriptionSell />
       <DescriptionVideo />
+      <DescriptionMarketing />
     </div>
   );
 };
