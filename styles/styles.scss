@@ -50,6 +50,11 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+.betweenStart {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
 .startCenterColumn {
   display: flex;
   justify-content: flex-start;
@@ -131,6 +136,9 @@ button {
 }
 .bgBlack {
   background-color: $black10;
+}
+.bgBlackDark{
+  background-color: $black7;
 }
 .bgBase{
   background-color: $base;
@@ -230,6 +238,12 @@ button {
 .p15 {
   padding: 15px;
 }
+.pl15{
+  padding-left: 15px;
+}
+.pr15{
+  padding-right: 15px;
+}
 .prl20 {
   padding-right: 20px;
   padding-left: 20px;
@@ -275,6 +289,9 @@ button {
 }
 .mt20 {
   margin-top: 20px;
+}
+.mt320{
+  margin-top: 320px;
 }
 .m45 {
   margin: 45px;
