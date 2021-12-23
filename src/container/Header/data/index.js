@@ -10,7 +10,7 @@ export const DATA_MENU = [
     link: "/news",
   },
   { title: "تعرفه خدمات", id: "2", link: "/service-tariff" },
-  { title: "درباره ما", id: "3", link: "/about-us" },
+  { title: "درباره ما", id: "3", link: "/about/us" },
   { title: "تماس با ما", id: "4", link: "/call-us" },
 ];
 
