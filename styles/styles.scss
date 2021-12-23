@@ -119,6 +119,9 @@ button {
 .h63 {
   height: 63px;
 }
+.h180 {
+  height: 180px;
+}
 // ----------- bg -----------
 .bgPrimary {
   background-color: $primary;
@@ -128,6 +131,9 @@ button {
 }
 .bgBlack {
   background-color: $black10;
+}
+.bgBase{
+  background-color: $base;
 }
 // ----------- color -----------
 .textWhite {
@@ -164,6 +170,9 @@ button {
 // ----------- line-height -----------
 .lineH61 {
   line-height: 61px;
+}
+.lineH40{
+  line-height: 40px;
 }
 // ----------- font -----------
 .font16 {
@@ -235,6 +244,9 @@ button {
 .mr25 {
   margin-right: 25px;
 }
+.mr-45{
+  margin-right: -45px;
+}
 .mr50 {
   margin-right: 50px;
 }
@@ -305,6 +317,9 @@ button {
 .radius42 {
   border-radius: 42px;
 }
+.radiusLeft42 {
+  border-radius: 42px 0 0 42px;
+}
 
 // ----------- border -----------
 .borderNone {
@@ -320,6 +335,12 @@ button {
 // ----------- position -----------
 .relative {
   position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.right0{
+  right: 0;
 }
 .absoluteCenter {
   position: absolute;
@@ -448,6 +469,10 @@ button {
   bottom: 0;
   right: 50%;
   transform: translateX(50%);
+}
+.aboutIcoKobin{
+  position: absolute;
+  top: -35px;
 }
 @media screen and (max-width: 1221px) {
   .wBase {

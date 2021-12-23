@@ -63,7 +63,7 @@ export const DATA_MENU_FOOTER = [
   {
     title: "درباره کوبین",
     id: 3,
-    link: "/",
+    link: "/about/kobin",
   },
   {
     title: "ارتباط با ما",
