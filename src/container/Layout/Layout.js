@@ -2,18 +2,16 @@ import styles from "./styles/layout.module.scss";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { useRouter } from "next/router";
-const paths = ["/about" , "/service-tariff"]
+const paths = ["/about", "/service-tariff", "/call-us"];
 const Layout = (props) => {
   const { children } = props;
   const router = useRouter();
   const path = router.asPath;
-  const isHome = !paths.some(x => path.includes(x))
+  const isHome = !paths.some((x) => path.includes(x));
   return (
     <div
       className={`hidden ${
-        isHome
-          ? styles.backGroundHome
-          : styles.backGroundHomeBlack
+        isHome ? styles.backGroundHome : styles.backGroundHomeBlack
       } betweenCenterColumn wh100`}
     >
       <Header />

@@ -83,6 +83,11 @@ button {
   justify-content: flex-start;
   align-items: center;
 }
+.start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+}
 .endCenter {
   display: flex;
   justify-content: flex-start;
@@ -129,6 +134,9 @@ button {
 }
 .h180 {
   height: 180px;
+}
+.hFull{
+  height: calc(100vh - 155px);
 }
 // ----------- bg -----------
 .bgPrimary {
@@ -337,6 +345,12 @@ button {
 }
 .mb100 {
   margin-bottom: 100px;
+}
+.mr100 {
+  margin-right: 100px;
+}
+.ml100 {
+  margin-left: 100px;
 }
 .mText {
   margin: 0 1px;
