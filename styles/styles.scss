@@ -137,10 +137,10 @@ button {
 .bgBlack {
   background-color: $black10;
 }
-.bgBlackDark{
+.bgBlackDark {
   background-color: $black7;
 }
-.bgBase{
+.bgBase {
   background-color: $base;
 }
 // ----------- color -----------
@@ -179,7 +179,7 @@ button {
 .lineH61 {
   line-height: 61px;
 }
-.lineH40{
+.lineH40 {
   line-height: 40px;
 }
 // ----------- font -----------
@@ -231,34 +231,48 @@ button {
 .pbt40 {
   padding: 40px 0;
 }
-.pbt20{
+.pbt20 {
   padding-bottom: 20px;
   padding-top: 20px;
 }
 .p15 {
   padding: 15px;
 }
-.pl15{
+.pt15 {
+  padding-top: 15px;
+}
+.pb15 {
+  padding-bottom: 15px;
+}
+.prl30 {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.prl45 {
+  padding-right: 45px;
+  padding-left: 45px;
+}
+.pl15 {
   padding-left: 15px;
 }
-.pr15{
+.pr15 {
   padding-right: 15px;
 }
 .prl20 {
   padding-right: 20px;
   padding-left: 20px;
 }
-.pNone{
+.pNone {
   padding: 0;
 }
 // ----------- margin -----------
-.mr10{
+.mr10 {
   margin-right: 10px;
 }
 .mr25 {
   margin-right: 25px;
 }
-.mr-45{
+.mr-45 {
   margin-right: -45px;
 }
 .mr50 {
@@ -271,10 +285,10 @@ button {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.mb20{
+.mb20 {
   margin-bottom: 20px;
 }
-.mb30{
+.mb30 {
   margin-bottom: 30px;
 }
 .mbt10 {
@@ -290,7 +304,7 @@ button {
 .mt20 {
   margin-top: 20px;
 }
-.mt320{
+.mt320 {
   margin-top: 320px;
 }
 .m45 {
@@ -356,10 +370,10 @@ button {
 .absolute {
   position: absolute;
 }
-.right0{
+.right0 {
   right: 0;
 }
-.top-220{
+.top-220 {
   top: -220px;
 }
 .absoluteCenter {
@@ -369,7 +383,7 @@ button {
   transform: translate(50%, -50%);
 }
 // ----------- list-style -----------
-.styleNone{
+.styleNone {
   list-style: none;
 }
 // ----------- class -----------
@@ -490,9 +504,26 @@ button {
   right: 50%;
   transform: translateX(50%);
 }
-.aboutIcoKobin{
+.aboutIcoKobin {
   position: absolute;
   top: -35px;
+}
+.onlineIcon {
+  position: absolute;
+  bottom: -69px;
+  left: 35px;
+}
+.lightLeft {
+  position: absolute;
+  bottom: -8px;
+  left: 25%;
+  transform: translateX(-150%) rotateY(180deg);
+}
+.lightRight {
+  position: absolute;
+  bottom: -8px;
+  right: 25%;
+  transform: translateX(150%);
 }
 @media screen and (max-width: 1221px) {
   .wBase {
