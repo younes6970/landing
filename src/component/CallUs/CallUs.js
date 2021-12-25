@@ -1,14 +1,35 @@
-const CallUs = () =>{
-    return <div className={`hFull w100 startColumn`}>
-            <h2 className={`font40 textWhite mt0 mb20`}>با ما در ارتباط باشید</h2>
-        <section className={`boxSection mt20 w100 startCenter mr100 ml100`}>
-            <div className={`flex1`}>
+import pin from "../../assets/icon/pin.png";
+import Image from "next/image";
+import Input from "../../container/Input/Input";
+import CallUsForm from "./component/CallUsForm/CallUsForm";
+const CallUs = () => {
+  return (
+    <div className={`w100 startCenterColumn mb100 mr100 ml100`}>
+      <h2 className={`font40 textWhite mt0 mb20`}>با ما در ارتباط باشید</h2>
+      <section
+        className={`mt20 wh100 radius42 shadow startCenter relative`}
+      >
+        <Image src={pin} alt={"kobin"} className={`wh100`} />
 
-            </div>
-            <div className={`flex1`}>
-
-            </div>
-        </section>
+        <div className={`callUs start`}>
+          <div className={`callUs57`} />
+          <div className={`callUs43 startColumn pr45`}>
+            <span className={`weight700 font24 textBlack inlineBlock`}>
+              با ما تماس بگیرید
+            </span>
+            <span className={`weight700 font30 textGreen inlineBlock mt5`}>
+              ۰۲۱-۲۳۴۷۹۲۳۴
+            </span>
+            <span
+              className={`textBlack weight700 font24 textBlack inlineBlock mb30 mt10 `}
+            >
+              یا، برامون پیام بگذارید...
+            </span>
+            <CallUsForm />
+          </div>
+        </div>
+      </section>
     </div>
-}
-export default CallUs
+  );
+};
+export default CallUs;
