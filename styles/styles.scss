@@ -162,6 +162,9 @@ button {
 .bgOrange {
   background-color: $orange;
 }
+.bgNone{
+  background: none;
+}
 // ----------- color -----------
 .textWhite {
   color: $whiteLight;
@@ -190,6 +193,9 @@ button {
 }
 .textJustify {
   text-align: justify;
+}
+.textStart{
+  text-align: start;
 }
 .textCenter {
   text-align: center;
@@ -387,6 +393,9 @@ button {
 }
 .hiddenX {
   overflow-x: hidden;
+}
+.scrollY{
+  overflow-y: auto;
 }
 // ----------- radius -----------
 .radius20 {
@@ -626,6 +635,29 @@ width: 57%;
 }
 .callUs43{
   width: 43%;
+}
+.ModalTerms{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: $white;
+  @extend .radius42;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 30px;
+  height: 650px;
+}
+.OverlayTerms {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $black55;
+  z-index: 10000;
 }
 @media screen and (max-width: 1221px) {
   .wBase {

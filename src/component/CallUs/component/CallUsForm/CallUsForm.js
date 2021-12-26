@@ -6,7 +6,7 @@ const CallUsForm = () => {
     <Formik
       initialValues={{ name: "", subject: "", text: "" }}
       onSubmit={(values) => {
-        console.log();
+        console.log("");
       }}
     >
       {(formik) => {

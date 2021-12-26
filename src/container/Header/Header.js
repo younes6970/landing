@@ -2,13 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import LogoKobin from "../../assets/logo/logoKobin.svg";
 import { DATA_MENU, DATA_SOCIAL_NETWORK } from "./data";
-import { Fragment } from "react";
+import {Fragment, useState} from "react";
 import ListMenu from "./component/ListMenu/ListMenu";
 import styles from "./header.module.scss";
 import ListSocialNetwork from "./component/ListSocialNetwork/ListSocialNetwork";
 import imgUser from "../../assets/icon/user.svg";
 const Header = () => {
+
   return (
+      <>
     <header className={`pbt40 ${styles.boxHeader}`}>
       <div className={`wBase betweenCenter`}>
         <nav className={`startCenter`}>
@@ -46,6 +48,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  );
+      </>
+);
 };
 export default Header;

@@ -5,6 +5,7 @@ import DescriptionSell from "./component/DescriptionSell/DescriptionSell";
 import DescriptionVideo from "./component/DescriptionVideo/DescriptionVideo";
 import DescriptionMarketing from "./component/DescriptionMarketing/DescriptionMarketing";
 
+
 const Home = () => {
   return (
     <div className={`wh100 startCenterColumn `}>
