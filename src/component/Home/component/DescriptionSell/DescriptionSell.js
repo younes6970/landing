@@ -1,5 +1,6 @@
 import sellIcon from "../../../../assets/icon/sell.svg";
 import Image from "next/image";
+import Link from "next/link";
 const DescriptionSell = () => {
   return (
     <section className={`boxSection bgPrimary relative mt100`}>
@@ -15,9 +16,11 @@ const DescriptionSell = () => {
             <br />
             باقی ماجرا رو به تیم کوبین بسپارید...
           </p>
-          <button className={`btn bgWhite textPrimary radius20 p15 mt10`}>
-            ثبت نام کسب و کار
-          </button>
+          <Link href={"/business/register"}>
+            <a className={`btn bgWhite textPrimary radius20 p15 mt10`}>
+              ثبت نام کسب و کار
+            </a>
+          </Link>
         </div>
         <div className={`flex1`}>
           <div className={`sellIcon`}>

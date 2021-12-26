@@ -1,7 +1,7 @@
 const LoginDashboard = () => {
   return (
     <div className={`wBase startCenterColumn mt10`}>
-      <h2 className={`textHeadingBig textWhite mt5 mb15`}>
+      <h2 className={`textHeadingSmall textWhite mt5 mb15`}>
         ورود به پنل مدیریت
       </h2>
       <div className={`bgWhite wLogin mt20 p45 radius42 shadow`}>

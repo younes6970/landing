@@ -6,6 +6,7 @@ import videoIcon from "../../../../assets/icon/VideoUploadCuate.svg";
 import vectorSoundIcon from "../../../../assets/icon/VectorSound.svg";
 import marketingIcon from "../../../../assets/icon/MobileMarketingRafiki.svg";
 import SendLink from "../SendLink/SendLink";
+import Link from "next/link";
 const Description = () => {
   return (
     <section className={`boxSection bgWhite relative mb100`}>
@@ -63,9 +64,11 @@ const Description = () => {
             استفاده از بروزترین روش ها و به شکل هوشمند تبلیغات شما را به کاربران
             نمایش دهیم.
           </p>
-          <button className={`btn textWhite bgPrimary shadowBtn radius20 p15`}>
+          <Link href={"/business/register"}>
+          <a className={`btn textWhite index1000 bgPrimary shadowBtn radius20 p15`}>
             ثبت نام کسب و کار در پلترم
-          </button>
+          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -101,7 +101,7 @@ button {
 }
 // ----------- display -----------
 
-.inlineBlock{
+.inlineBlock {
   display: inline-block;
 }
 // ----------- width and height -----------
@@ -118,7 +118,7 @@ button {
 .wPrice {
   width: 380px;
 }
-.wLogin{
+.wLogin {
   width: 560px;
 }
 .wBase {
@@ -143,7 +143,7 @@ button {
 .h180 {
   height: 180px;
 }
-.hFull{
+.hFull {
   height: calc(100vh - 155px);
 }
 // ----------- bg -----------
@@ -165,7 +165,7 @@ button {
 .bgOrange {
   background-color: $orange;
 }
-.bgNone{
+.bgNone {
   background: none;
 }
 // ----------- color -----------
@@ -197,7 +197,7 @@ button {
 .textJustify {
   text-align: justify;
 }
-.textStart{
+.textStart {
   text-align: start;
 }
 .textCenter {
@@ -397,7 +397,7 @@ button {
 .hiddenX {
   overflow-x: hidden;
 }
-.scrollY{
+.scrollY {
   overflow-y: auto;
 }
 // ----------- radius -----------
@@ -414,6 +414,9 @@ button {
 // ----------- border -----------
 .borderNone {
   border: none;
+}
+.borderBottom {
+  border-bottom: 1px dotted $black1;
 }
 // ----------- shadow -----------
 .shadow {
@@ -445,7 +448,7 @@ button {
 .styleNone {
   list-style: none;
 }
-.lineNone{
+.lineNone {
   border: none;
   outline: none;
 }
@@ -459,6 +462,10 @@ button {
 }
 .textHeadingBig {
   @extend .font64;
+  @extend .weight700;
+}
+.textHeadingSmall {
+  @extend .font30;
   @extend .weight700;
 }
 .textParagraphHome {
@@ -623,7 +630,7 @@ button {
   right: -20px;
   left: -50px;
 }
-.callUs{
+.callUs {
   background: linear-gradient(90deg, white 43%, transparent 66%);
   position: absolute;
   top: 0;
@@ -633,13 +640,13 @@ button {
   @extend .radius42;
   @extend .p45;
 }
-.callUs57{
-width: 57%;
+.callUs57 {
+  width: 57%;
 }
-.callUs43{
+.callUs43 {
   width: 43%;
 }
-.ModalTerms{
+.ModalTerms {
   position: absolute;
   top: 50%;
   right: 50%;
@@ -662,7 +669,7 @@ width: 57%;
   background-color: $black55;
   z-index: 10000;
 }
-.inputBox{
+.inputBox {
   border: none;
   outline: none;
   padding: 15px 20px;
@@ -671,6 +678,21 @@ width: 57%;
   background-color: $base;
   margin-bottom: 10px;
   width: 100%;
+}
+.codeInput {
+  background-color: $base;
+  border: none;
+  outline: none;
+  color: $white;
+  @extend .center;
+  width: 57px;
+  height: 57px;
+  @extend .font20;
+  border-radius: 100%;
+  flex-wrap: wrap-reverse;
+  &:focus {
+    border: 1px solid $black10;
+  }
 }
 @media screen and (max-width: 1221px) {
   .wBase {

@@ -2,7 +2,13 @@ import styles from "./styles/layout.module.scss";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { useRouter } from "next/router";
-const paths = ["/about", "/service-tariff", "/call-us" , "/dashboard"];
+const paths = [
+  "/about",
+  "/service-tariff",
+  "/call-us",
+  "/dashboard",
+  "/business",
+];
 const Layout = (props) => {
   const { children } = props;
   const router = useRouter();
