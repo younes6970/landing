@@ -118,6 +118,9 @@ button {
 .wPrice {
   width: 380px;
 }
+.wLogin{
+  width: 560px;
+}
 .wBase {
   width: 100%;
   max-width: 1180px;
@@ -658,6 +661,16 @@ width: 57%;
   bottom: 0;
   background-color: $black55;
   z-index: 10000;
+}
+.inputBox{
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  color: $black10;
+  @extend .radius20;
+  background-color: $base;
+  margin-bottom: 10px;
+  width: 100%;
 }
 @media screen and (max-width: 1221px) {
   .wBase {
