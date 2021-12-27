@@ -11,7 +11,7 @@ const SendCode = () => {
         <button
           className={`textBlackLight bgNone font20 weight400 borderNone borderBottom`}
         >
-          ویرابش موبایل
+          ویرایش موبایل
         </button>
       </div>
       <div className={`w100 betweenCenter mt5 mb20`}>

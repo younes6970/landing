@@ -1,12 +1,18 @@
 import "../../styles/styles.scss";
 
 import Layout from "../container/Layout/Layout";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <Head>
+        <title>Kobin | کوبین</title>
+      </Head>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
   );
 }
 

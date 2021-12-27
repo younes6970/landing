@@ -366,6 +366,16 @@ button {
 .mr100 {
   margin-right: 100px;
 }
+.mrl5{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.ml5{
+  margin-left : 5px
+}
+.mr5{
+  margin-right: 5px;
+}
 .ml100 {
   margin-left: 100px;
 }
@@ -683,7 +693,8 @@ button {
   background-color: $base;
   border: none;
   outline: none;
-  color: $white;
+  color: $black10;
+  text-align: center;
   @extend .center;
   width: 57px;
   height: 57px;

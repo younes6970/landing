@@ -7,7 +7,7 @@ export const DATA_MENU = [
   {
     title: "اخبارکسب و کارها",
     id: "1",
-    link: "/news",
+    link: "/coming-soon",
   },
   { title: "تعرفه خدمات", id: "2", link: "/service-tariff" },
   { title: "درباره ما", id: "3", link: "/about/us" },

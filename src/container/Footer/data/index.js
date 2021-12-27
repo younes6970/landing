@@ -52,7 +52,7 @@ export const DATA_MENU_FOOTER = [
   {
     title: "سوالات متداول",
     id: 1,
-    link: "/",
+    link: "/coming-soon",
   },
   {
     title: "قوانین و مقررات",
@@ -68,7 +68,7 @@ export const DATA_MENU_FOOTER = [
   {
     title: "ارتباط با ما",
     id: 4,
-    link: "/",
+    link: "/call-us",
   },
 ];
 export const DATA_TERMS = [
