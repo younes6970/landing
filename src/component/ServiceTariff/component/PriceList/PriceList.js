@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import PropTypes from "prop-types";
 const PriceList = (props) => {
   const { icon, title, oldPrice, newPrice, titleDown, lists, backGround } =
@@ -6,7 +6,7 @@ const PriceList = (props) => {
   return (
     <div className={`startColumn radius42 bgWhite hidden wPrice shadow`}>
       <div className={`startColumn ${backGround} p20 w100`}>
-        <Image src={icon} alt={"kobin"} />
+        <img src={icon} alt={"kobin"} />
         <h3 className={`weight600 font40 textWhite mt5 mb0`}>{title}</h3>
         <h3 className={`weight600 font40 textWhite mt0 mb0`}>{titleDown}</h3>
       </div>

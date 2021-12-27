@@ -1,4 +1,3 @@
-import Image from "next/image";
 import logoFooter from "../../assets/icon/logoFooter.svg";
 import { Fragment, useState } from "react";
 import Stores from "./component/Stores/Stores";
@@ -20,7 +19,7 @@ const Footer = () => {
       <div className={`w100 center bgBlack pbt40`}>
         <div className={`wBase startColumn`}>
           <div className={`w100 betweenCenter mb30`}>
-            <Image src={logoFooter} alt={"kobin"} />
+            <img src={logoFooter} alt={"kobin"} />
             <div className={`endCenter`}>
               {DATA_STORES.map((store) => (
                 <Fragment key={store.id}>
@@ -42,20 +41,20 @@ const Footer = () => {
                 ))}
               </ul>
               <div className={`startCenter`}>
-                <Image src={addressIcon} alt={"kobin"} />
+                <img src={addressIcon} alt={"kobin"} />
                 <span className={`textWhite font20 weight600 mr10`}>
                   تهران خیابان مطهری بعد از مفتح پلاک ۱۶۱
                 </span>
               </div>
               <div className={`startCenter mt20`}>
                 <div className={`startCenter`}>
-                  <Image src={phoneIcon} alt={"kobin"} />
+                  <img src={phoneIcon} alt={"kobin"} />
                   <span className={`textWhite font20 weight600 mr10`}>
                     ۰۲۱۸۸۷۴۲۹۲۲
                   </span>
                 </div>
                 <div className={`startCenter mr25`}>
-                  <Image src={emailIcon} alt={"kobin"} />
+                  <img src={emailIcon} alt={"kobin"} />
                   <span className={`textWhite font20 weight600 mr10`}>
                     info@kobin.ir
                   </span>

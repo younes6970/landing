@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import underLine from "../../../../assets/icon/underLine.svg";
 import underLineTwo from "../../../../assets/icon/underLineTwo.svg";
 import vectorVideoIcon from "../../../../assets/icon/VectorVideo.svg";
@@ -16,7 +16,7 @@ const Description = () => {
             ویدیو ببین،{" "}
             <span className={`textHeadingBig relative`}>
               <div className={`underLine`}>
-                <Image src={underLine} alt={"kobin"} />
+                <img src={underLine} alt={"kobin"} />
               </div>
               جایزه
             </span>{" "}
@@ -31,20 +31,20 @@ const Description = () => {
         </div>
         <div className={`flex1`}>
           <div className={`vectorVideoIcon`}>
-            <Image src={vectorVideoIcon} alt={"kobin"} />
+            <img src={vectorVideoIcon} alt={"kobin"} />
           </div>
           <div className={`videoIcon`}>
-            <Image src={videoIcon} alt={"kobin"} />
+            <img src={videoIcon} alt={"kobin"} />
           </div>
         </div>
       </div>
       <div className={`w100 betweenCenter mt100`}>
         <div className={`flex1`}>
           <div className={`vectorSound`}>
-            <Image src={vectorSoundIcon} alt={"kobin"} />
+            <img src={vectorSoundIcon} alt={"kobin"} />
           </div>
           <div className={`marketingIcon`}>
-            <Image src={marketingIcon} alt={"kobin"} />
+            <img src={marketingIcon} alt={"kobin"} />
           </div>
         </div>
         <div className={`flex2 startColumn mr50`}>
@@ -55,7 +55,7 @@ const Description = () => {
             <span className={`textHeadingBig relative`}>
               بیشتر بفروش...
               <div className={`underLine`}>
-                <Image src={underLineTwo} alt={"kobin"} />
+                <img src={underLineTwo} alt={"kobin"} />
               </div>
             </span>
           </h2>

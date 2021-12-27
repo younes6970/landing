@@ -1,5 +1,4 @@
 import website from "../../../../assets/icon/Website.svg";
-import Image from "next/image";
 const Support = () => {
   return (
     <section className={`boxSection w100 bgWhite mt20 mb20 relative`}>
@@ -25,7 +24,7 @@ const Support = () => {
         </div>
         <div className={`flex1`}>
           <div className={`website`}>
-            <Image src={website} alt={"kobin"} />
+            <img src={website} alt={"kobin"} />
           </div>
         </div>
       </div>

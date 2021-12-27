@@ -1,12 +1,12 @@
 import lightIcon from "../../../../assets/icon/light.svg";
-import Image from "next/image";
+
 const ContentProduction = () => {
   return (
     <section className={`boxSection w100 bgWhite mt20 mb20 relative`}>
       <div className={`center w100`}>
         <div className={`flex1 wh100`}>
           <div className={`lightRight`}>
-            <Image src={lightIcon} alt={"kobin"} />
+            <img src={lightIcon} alt={"kobin"} />
           </div>
         </div>
         <div className={`flex2 centerColumn`}>
@@ -23,7 +23,7 @@ const ContentProduction = () => {
         </div>
         <div className={`flex1`}>
           <div className={`lightLeft`}>
-            <Image src={lightIcon} alt={"kobin"} />
+            <img src={lightIcon} alt={"kobin"} />
           </div>
         </div>
       </div>

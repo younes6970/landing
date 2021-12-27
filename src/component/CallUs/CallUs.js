@@ -1,6 +1,5 @@
 import pin from "../../assets/icon/pin.png";
-import Image from "next/image";
-import Input from "../../container/Input/Input";
+
 import CallUsForm from "./component/CallUsForm/CallUsForm";
 const CallUs = () => {
   return (
@@ -9,7 +8,7 @@ const CallUs = () => {
       <section
         className={`mt20 wh100 radius42 shadow startCenter relative`}
       >
-        <Image src={pin} alt={"kobin"} className={`wh100`} />
+        <img src={pin} alt={"kobin"} className={`wh100`} />
 
         <div className={`callUs start`}>
           <div className={`callUs57`} />

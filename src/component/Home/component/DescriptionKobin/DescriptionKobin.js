@@ -2,7 +2,7 @@ import underLineNovinIcon from "../../../../assets/icon/underLineNovin.svg";
 import tomanIcon from "../../../../assets/icon/underLineToman.svg";
 import homePageIcon from "../../../../assets/icon/HomePage.svg"
 import coinIcon from "../../../../assets/icon/coin.svg"
-import Image from "next/image";
+
 const DescriptionKobin = () => {
   return (
     <section className={`boxSection bgWhite relative mt100`}>
@@ -15,7 +15,7 @@ const DescriptionKobin = () => {
             <span className={`relative`}>
               راهکاری نوین
               <div className={`underLine`}>
-                <Image src={underLineNovinIcon} alt={"kobin"} />
+                <img src={underLineNovinIcon} alt={"kobin"} />
               </div>
             </span>{" "}
             برای
@@ -35,7 +35,7 @@ const DescriptionKobin = () => {
             <span className={`weight400 font30 textBlackDark relative`}>
               180
               <span className={`underLineToman`}>
-                <Image src={tomanIcon} alt={"kobin"} />
+                <img src={tomanIcon} alt={"kobin"} />
               </span>
             </span>
             تومان به ازای هر نمایش
@@ -43,12 +43,12 @@ const DescriptionKobin = () => {
         </div>
         <div className={`flex1`}>
           <div className={`homePage`}>
-            <Image src={homePageIcon} alt={"kobin"} />
+            <img src={homePageIcon} alt={"kobin"} />
           </div>
         </div>
       </div>
       <div className={`coinIcon`}>
-        <Image src={coinIcon} alt={"kobin"} />
+        <img src={coinIcon} alt={"kobin"} />
       </div>
     </section>
   );

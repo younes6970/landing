@@ -1,10 +1,9 @@
 import kobin3dIcon from "../../../../assets/icon/kobin3d.svg";
-import Image from "next/image";
 const DescriptionNetwork = () => {
   return (
     <section className={`boxSection bgWhite relative mt100`}>
       <div className={`networkIcon`}>
-        <Image src={kobin3dIcon} alt={"kobin"} />
+        <img src={kobin3dIcon} alt={"kobin"} />
       </div>
       <div className={`w100 startCenterColumn mt100`}>
         <h2 className={`textHeadingBig textPrimary mNone`}>

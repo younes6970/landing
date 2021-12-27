@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import kobinIcon from "../../assets/icon/kobin3d.svg";
 import DescriptionVideo from "../Home/component/DescriptionVideo/DescriptionVideo";
 const AboutKobin = () => {
@@ -24,7 +24,7 @@ const AboutKobin = () => {
           </div>
           <div className={`flex1`}>
             <div className={`aboutIcoKobin`}>
-              <Image src={kobinIcon} alt={"kobin"} />
+              <img src={kobinIcon} alt={"kobin"} />
             </div>
           </div>
         </div>

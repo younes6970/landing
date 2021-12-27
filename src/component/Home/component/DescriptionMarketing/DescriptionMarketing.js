@@ -1,6 +1,5 @@
 import groupIcon from "../../../../assets/icon/group.svg";
 
-import Image from "next/image";
 import MarketingText from "../MarketingText/MarketingText";
 const DescriptionMarketing = () => {
   return (
@@ -56,7 +55,7 @@ const DescriptionMarketing = () => {
         مارکتینگ
       </h2>
       <div className={`absoluteCenter w100`}>
-        <Image src={groupIcon} alt={"kobin"} />
+        <img src={groupIcon} alt={"kobin"} />
       </div>
     </section>
   );

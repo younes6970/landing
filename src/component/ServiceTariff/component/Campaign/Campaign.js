@@ -1,5 +1,5 @@
 import onlineIcon from "../../../../assets/icon/Online.svg";
-import Image from "next/image";
+
 const Campaign = () => {
   return (
     <section className={`w100 boxSection bgPrimary mt20 relative`}>
@@ -21,7 +21,7 @@ const Campaign = () => {
         </div>
         <div className={`flex1`}>
           <div className={`onlineIcon index1000`}>
-            <Image src={onlineIcon} alt={"kobin"} />
+            <img src={onlineIcon} alt={"kobin"} />
           </div>
         </div>
       </div>

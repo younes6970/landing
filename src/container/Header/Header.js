@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Link from "next/link";
 import LogoKobin from "../../assets/logo/logoKobin.svg";
 import { DATA_MENU, DATA_SOCIAL_NETWORK } from "./data";
@@ -17,7 +17,7 @@ const Header = () => {
               <li>
                 <Link href={"/"}>
                   <a className={`textWhite`}>
-                    <Image src={LogoKobin} alt={"kobin | کوبین"} />
+                    <img src={LogoKobin} alt={"kobin | کوبین"} />
                   </a>
                 </Link>
               </li>
@@ -39,7 +39,7 @@ const Header = () => {
             <button
               className={`betweenCenter bgPrimary p15 radius20 borderNone shadowBtn`}
             >
-              <Image src={imgUser} alt={"kobin"} />
+              <img src={imgUser} alt={"kobin"} />
               <Link href={"/dashboard/login"}>
                 <a className={`textWhite weight600 font24 mr25`}>
                   ورود به پنل کاربری

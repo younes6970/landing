@@ -1,7 +1,7 @@
 import ReactModal from "react-modal";
 import PropTypes from "prop-types";
 import closeIcon from "../../assets/icon/close.svg";
-import Image from "next/image";
+
 import { DATA_TERMS } from "../../container/Footer/data";
 const TermsAndConditions = (props) => {
   const { isOpen, onClose } = props;
@@ -17,7 +17,7 @@ const TermsAndConditions = (props) => {
           قوانین و مقررات
         </h2>
         <button className={`btn bgNone`} onClick={onClose}>
-          <Image src={closeIcon} alt={"kobin"} />
+          <img src={closeIcon} alt={"kobin"} />
         </button>
       </div>
       <div className={`w100 startColumn scrollY`}>

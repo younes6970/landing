@@ -1,5 +1,4 @@
 import playIcon from "../../../../assets/icon/play.png";
-import Image from "next/image";
 import PropTypes from "prop-types";
 const DescriptionVideo = (props) => {
     const {isAbout} = props
@@ -9,7 +8,7 @@ const DescriptionVideo = (props) => {
                 {/*<source src={"../../../../../public/video/androidTV.mp4"} type="video/mp4" />*/}
             </video>
             <div className={`centerColumn backgroundVideo bgBlackDark m45 radius42`}>
-                <Image src={playIcon} alt={"kobin"}/>
+                <img src={playIcon} alt={"kobin"}/>
                 <h3 className={`font64 textWhite mNone`}>داستان کوبین چیه؟</h3>
             </div>
         </section>

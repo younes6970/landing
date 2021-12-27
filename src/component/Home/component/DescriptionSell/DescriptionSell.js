@@ -1,5 +1,4 @@
 import sellIcon from "../../../../assets/icon/sell.svg";
-import Image from "next/image";
 import Link from "next/link";
 const DescriptionSell = () => {
   return (
@@ -24,7 +23,7 @@ const DescriptionSell = () => {
         </div>
         <div className={`flex1`}>
           <div className={`sellIcon`}>
-            <Image src={sellIcon} alt={"kobin"} />
+            <img src={sellIcon} alt={"kobin"} />
           </div>
         </div>
       </div>
